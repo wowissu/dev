@@ -4,14 +4,20 @@
  * @type { import('eslint').Linter.Config }
  */
 module.exports = {
+  parserOptions: {
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module' // Allows for the use of imports
+  },
+
   // add your custom rules here
   rules: {
+    "generator-star-spacing": ["error", "after"],
     'indent': ['error', 2, { 'MemberExpression': 1, 'SwitchCase': 1 }],
     'eqeqeq': ['error', 'always'],
     'prefer-const': 'error',
     'prefer-promise-reject-errors': 'off',
     'no-useless-escape': 'off',
-    'quotes': ['error', 'single'],
+    'quotes': ['warn', 'single', { avoidEscape: true }],
     'semi': 'error',
     // allow console.log during development only
     'no-console': ['warn', { 'allow': ['warn', 'error'] }],

@@ -8,7 +8,8 @@ module.exports = {
     // ESLint typescript rules
     // See https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#usage
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking'
   ],
   plugins: [
     '@typescript-eslint'
@@ -17,9 +18,7 @@ module.exports = {
   // See https://eslint.vuejs.org/user-guide/#how-to-use-custom-parser
   // `parser: 'vue-eslint-parser'` is already included with any 'plugin:vue/**' config and should be omitted
   parserOptions: {
-    parser: '@typescript-eslint/parser',
-    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module' // Allows for the use of imports
+    parser: '@typescript-eslint/parser'
   },
   rules: {
     '@typescript-eslint/semi': ['error'],
@@ -30,6 +29,7 @@ module.exports = {
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/prefer-as-const': 'off',
+    '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-this-alias': [
       'error',
       {
