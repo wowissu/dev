@@ -1,9 +1,11 @@
 # eslint
 
-Add extend into extends for active the features.
+Add extend into .eslintrc for active the features.
 
-```json
-{
+```javascript
+// .eslintrc.js
+
+module.exports = {
   // ...
   extends: [
     './node_modules/@wowissu/eslint/common',
