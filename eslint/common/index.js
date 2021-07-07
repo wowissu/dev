@@ -46,6 +46,6 @@ module.exports = {
     ],
     'padded-blocks': ['error', 'never'],
     'newline-before-return': 'error',
-    'no-shadow': ['error', { 'builtinGlobals': true, 'allow': ['done', 'resolve', 'reject', 'cb', 'fn'] , 'hoist': 'functions'}]
+    'no-shadow': ['error', { 'builtinGlobals': true, 'allow': ['done', 'resolve', 'reject', 'cb', 'fn', 'args', '_'] , 'hoist': 'functions'}]
   }
 };
