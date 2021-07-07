@@ -4,6 +4,11 @@
 
 /** @return { import('eslint').Linter.Config } */
 module.exports = {
+  plugins: [
+    // Required to lint *.vue files
+    // See https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-file
+    'vue'
+  ],
   rules: {
     'vue/html-closing-bracket-newline': ['error', {
       'singleline': 'never',
@@ -32,7 +37,7 @@ module.exports = {
       'ignoreIncludesComment': false,
       'ignoreStringEscape': false
     }],
-    'vue/component-name-in-template-casing': ['error', "PascalCase" | "kebab-case"],
+    'vue/component-name-in-template-casing': ['error', "kebab-case", { registeredComponentsOnly: true }],
     'vue/no-empty-component-block': ['error']
   }
 };

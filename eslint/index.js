@@ -4,4 +4,5 @@ module.exports = {
   fileProgress: require('./file-progress'),
   ts: require('./ts'),
   vue: require('./vue'),
+  vue3: require('./vue3'),
 }

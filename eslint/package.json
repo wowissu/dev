@@ -2,6 +2,9 @@
   "name": "@wowissu/eslint",
   "version": "0.0.7",
   "description": "Eslint from wowissu.",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wowissu/dev.git"
@@ -21,7 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.23.0",
+    "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-file-progress": "^1.1.1",
     "eslint-plugin-vue": "^7.8.0",
@@ -31,5 +34,9 @@
     "url": "https://github.com/wowissu/dev/issues"
   },
   "homepage": "https://github.com/wowissu/dev#readme",
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "glob": "^7.1.7",
+    "jest": "^27.0.6"
+  }
 }
