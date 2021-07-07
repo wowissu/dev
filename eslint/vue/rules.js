@@ -17,7 +17,7 @@ module.exports = {
       }
     }],
     'vue/no-v-html': 0,
-    'vue/prop-name-casing': ['error', 'kebab-case'],
+    'vue/prop-name-casing': ['error', 'camelCase'],
     'vue/block-tag-newline': ['error', {
       'singleline': 'consistent',
       'multiline': 'consistent',
