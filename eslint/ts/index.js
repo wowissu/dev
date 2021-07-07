@@ -1,15 +1,10 @@
-/**
- * show progress in process
- */
-
 /** @return { import('eslint').Linter.Config } */
 module.exports = {
   extends: [
     // ESLint typescript rules
     // See https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#usage
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking'
+    'plugin:@typescript-eslint/recommended'
   ],
   plugins: [
     '@typescript-eslint'
@@ -23,6 +18,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/semi': ['error'],
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
