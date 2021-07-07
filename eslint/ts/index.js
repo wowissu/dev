@@ -25,7 +25,9 @@ module.exports = {
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/prefer-as-const': 'off',
-    '@typescript-eslint/no-shadow': 'error',
+
+
+
     '@typescript-eslint/no-this-alias': [
       'error',
       {
@@ -111,6 +113,10 @@ module.exports = {
           object: false
         }
       }
-    ]
+    ],
+
+    // note you must disable the base rule as it can report incorrect errors
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
   }
 };

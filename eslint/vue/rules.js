@@ -37,7 +37,7 @@ module.exports = {
       'ignoreIncludesComment': false,
       'ignoreStringEscape': false
     }],
-    'vue/component-name-in-template-casing': ['error', "kebab-case", { registeredComponentsOnly: true }],
+    'vue/component-name-in-template-casing': ['error', "PascalCase", { registeredComponentsOnly: true }],
     'vue/no-empty-component-block': ['error']
   }
 };

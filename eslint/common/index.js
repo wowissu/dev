@@ -11,7 +11,7 @@ module.exports = {
 
   // add your custom rules here
   rules: {
-    "generator-star-spacing": ["error", "after"],
+    'generator-star-spacing': ['error', 'after'],
     'indent': ['error', 2, { 'MemberExpression': 1, 'SwitchCase': 1 }],
     'eqeqeq': ['error', 'always'],
     'prefer-const': 'error',
@@ -45,6 +45,7 @@ module.exports = {
       { 'blankLine': 'any', 'prev': ['import'], 'next': ['import'] }
     ],
     'padded-blocks': ['error', 'never'],
-    'newline-before-return': 'error'
+    'newline-before-return': 'error',
+    'no-shadow': ['error', { 'builtinGlobals': true, 'allow': ['done', 'resolve', 'reject', 'cb', 'fn'] , 'hoist': 'functions'}]
   }
 };
