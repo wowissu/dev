@@ -17,6 +17,7 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-promise-reject-errors': 'off',
     'no-useless-escape': 'off',
+    'no-multiple-empty-lines':  ['error', { 'max': 1, 'maxEOF': 0, 'maxBOF': 0 }],
     'quotes': ['warn', 'single', { avoidEscape: true }],
     'semi': 'error',
     // allow console.log during development only
