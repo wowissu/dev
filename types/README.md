@@ -79,7 +79,7 @@ type Result = FilterOfType<{ foo: string, bar: number }, string>; // { foo: stri
 
 ### `RequireAtLeastOne<T, K extends keyof T>`
 
-Require at least one member from <T>
+Require at least one member from `T`
 
 ```typescript
 type Target = { foo?: string, bar?: number, other: string }
