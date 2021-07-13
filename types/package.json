@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore --ext .js,.ts"
+    "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore --ext .js,.ts",
+    "pub": "yarn publish --access public"
+
   },
   "devDependencies": {
     "@wowissu/eslint": "^0.1.0",
