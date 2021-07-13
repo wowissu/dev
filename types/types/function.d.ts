@@ -3,7 +3,7 @@
  *
  * @example
  * ```typescript
- * type Result = FirstArgument<(fst: number, sed: string, thr: object)>; // number
+ * type Result = FirstArgument<(fst: number, sed: string, thr: object) => any>;
  * type Result = number
  * ```
  */
@@ -14,8 +14,8 @@ export type FirstArgument<T> = T extends (arg1: infer U, ...args: any[]) => any 
  *
  * @example
  * ```typescript
- * type Result = OmitFirstParamters<(fst: number, sed: string, thr: object)>;
+ * type Result = OmitFirstParamters<(fst: number, sed: string, thr: object) => any>;
  * type Result = [sed: string, thr: object]
  * ```
  */
-export type OmitFirstParamters<F> = F extends (x: any, ...args: infer P) => any ? P : never;
+export type OmitFirstParamters<T> = T extends (x: any, ...args: infer P) => any ? P : never;

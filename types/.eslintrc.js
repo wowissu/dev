@@ -1,5 +1,7 @@
 // .eslintrc.js
 
+const { resolve } = require('path');
+
 /** @type { import('eslint').Linter.Config } */
 module.exports = {
   root: true,
@@ -17,9 +19,9 @@ module.exports = {
   ],
 
   parserOptions: {
-    project: './tsconfig.json'
-    // ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    // sourceType: 'module' // Allows for the use of imports
+    project: resolve(__dirname, 'tsconfig.json'),
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module' // Allows for the use of imports
   },
 
   globals: {

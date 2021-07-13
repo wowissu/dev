@@ -8,7 +8,7 @@
  * type Result = IfEquals<number, string, number>; // never
  * ```
  */
-type IfEquals<X, Y, A=X, B=never> = (<T>() => T extends X ? 1 : 2) extends (<T>() => T extends Y ? 1 : 2) ? A : B;
+export type IfEquals<X, Y, A=X, B=never> = (<T>() => T extends X ? 1 : 2) extends (<T>() => T extends Y ? 1 : 2) ? A : B;
 
 /**
  * Pick the keys of writable member.
