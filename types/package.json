@@ -7,6 +7,10 @@
   "author": "wowissu",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "wowissu",
+    "typescript"
+  ],
   "scripts": {
     "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore --ext .js,.ts",
     "pub": "yarn publish --access public"
