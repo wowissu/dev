@@ -117,6 +117,6 @@ module.exports = {
 
     // note you must disable the base rule as it can report incorrect errors
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error', { 'builtinGlobals': true, 'allow': ['done', 'resolve', 'reject', 'cb', 'fn', 'args', '_'] , 'hoist': 'functions'}]
+    '@typescript-eslint/no-shadow': ['error', { 'builtinGlobals': false, 'allow': ['done', 'resolve', 'reject', 'cb', 'fn', 'args', '_'] , 'hoist': 'functions'}]
   }
 };
