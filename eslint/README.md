@@ -1,4 +1,4 @@
-# eslint
+# @wowissu/eslint
 
 Add extend into .eslintrc for active the features.
 
@@ -18,23 +18,40 @@ module.exports = {
 
 ### `@wowissu/eslint/common`
 
-common js rules, must use this as base.
+![eslint](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/eslint?filename=eslint%2Fpackage.json)
+
+Common js rules, must use this as base.
 
 ### `@wowissu/eslint/babel`
 
-babel
+![babel-eslint](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/babel-eslint?filename=eslint%2Fpackage.json)
 
 ### `@wowissu/eslint/file-progress`
 
-Show the file progress when linting.
+![eslint-plugin-file-progress](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/eslint-plugin-file-progress?filename=eslint%2Fpackage.json)
 
+Show the file progress when linting.
 
 ### `@wowissu/eslint/ts`
 
-rules of typescript. base with `plugin:@typescript-eslint/eslint-recommended`,`plugin:@typescript-eslint/recommended`
+![@typescript-eslint/eslint-plugin](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/@typescript-eslint/eslint-plugin?filename=eslint%2Fpackage.json)
+![@typescript-eslint/parser](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/@typescript-eslint/parser?filename=eslint%2Fpackage.json)
+
+Rules of typescript. base with
+
+```
+'plugin:@typescript-eslint/eslint-recommended'
+'plugin:@typescript-eslint/recommended'
+```
 
 ### `@wowissu/eslint/vue`
 
-rules of vue, base with `plugin:vue/recommended`
+![eslint-plugin-vue](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/eslint-plugin-vue?filename=eslint%2Fpackage.json)
+
+Rules of vue, base with
+
+```
+plugin:vue/recommended
+```
 
 
