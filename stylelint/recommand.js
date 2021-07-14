@@ -1,6 +1,6 @@
 module.exports = {
   "extends": [
-    "stylelint-config-recommand",
+    "stylelint-config-recommended",
   ],
   "rules": {
     // "selector-max-id": 1,
