@@ -30,9 +30,8 @@ const argv = yargs(hideBin(process.argv))
       .options(opts)
   })
   .showHelpOnFail(true)
-  // .demandCommand(1)
+  .demandCommand(1)
   .check((argv) => {
-
     // check cwd path
     if (!argv.cwd || !fs.existsSync(argv.cwd)) {
       return chalk.yellow`<!> Working dir "${argv.cwd}" is not exists. \n`;
@@ -50,9 +49,6 @@ const argv = yargs(hideBin(process.argv))
     return true;
   })
   .argv
-
-console.log(argv);
-process.exit();
 
 const execCommonOpt = { cwd: argv.cwd }
 const packageJsonPath = path.join(argv.cwd, 'package.json');
