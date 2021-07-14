@@ -15,7 +15,7 @@
     "eslint",
     "lint"
   ],
-  "author": "Wowissu",
+  "author": "wowissu",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
