@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "publish:eslint": "node publish.js ./eslint",
+    "publish:types": "node publish.js ./types"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^4.1.1",
+    "yargs": "^17.0.1"
+  }
+}
