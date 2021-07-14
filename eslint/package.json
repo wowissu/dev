@@ -13,10 +13,9 @@
   "keywords": [
     "wowissu",
     "eslint",
-    "stylelint",
     "lint"
   ],
-  "author": "Razvan Stoenescu",
+  "author": "Wowissu",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

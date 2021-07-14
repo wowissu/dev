@@ -1,7 +1,7 @@
 {
   "name": "@wowissu/stylelint",
   "version": "1.0.1",
-  "description": "stylelint form wowissu",
+  "description": "Stylelint form wowissu",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +18,16 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/wowissu/dev/issues"
+  },
+  "homepage": "https://github.com/wowissu/dev#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wowissu/dev.git"
   }
 }
