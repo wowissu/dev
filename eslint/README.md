@@ -38,7 +38,6 @@ Show the file progress when linting.
 ![@typescript-eslint/eslint-plugin](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/@typescript-eslint/eslint-plugin?filename=eslint%2Fpackage.json)
 ![@typescript-eslint/parser](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/@typescript-eslint/parser?filename=eslint%2Fpackage.json)
 
-
 Rules of typescript. extends with
 
 ```javascript
