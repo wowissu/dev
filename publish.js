@@ -38,11 +38,9 @@ const argv = yargs(hideBin(process.argv))
     }
 
     // check version option
-    const hasVersionOpt = Object.keys(opts).some((optKey) => {
-      return argv[optKey] === true
-    })
+    const hasVersionOpt = Object.keys(opts).filter((optKey) => argv[optKey] === true)
 
-    if (hasVersionOpt === false) {
+    if (hasVersionOpt.length !== 1) {
       return chalk.yellow`<!> Please pick one version option. \n`;
     }
 
