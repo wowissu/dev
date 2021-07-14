@@ -1,23 +1,8 @@
-{
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-sass-guidelines"
-  ],
+module.exports = {
   "plugins": [
-		"stylelint-scss",
     "stylelint-order"
 	],
   "rules": {
-    "selector-max-id": 1,
-    "max-nesting-depth": null,
-    "selector-max-compound-selectors": null,
-    "no-descending-specificity": null,
-    "scss/at-import-partial-extension-blacklist": null,
-    "font-family-no-missing-generic-family-keyword": null,
-    "selector-pseudo-element-no-unknown": null,
-    "order/properties-alphabetical-order": null,
-    "selector-class-pattern": null,
-    "selector-no-qualifying-type": ["error", {"ignore": ["attribute", "class", "id"]}],
     "order/properties-order": [
       "position",
       "top",
