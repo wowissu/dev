@@ -16,24 +16,24 @@ module.exports = {
 }
 ```
 
-### ```@wowissu/eslint/common```
+### `@wowissu/eslint/common`
 
 common js rules, must use this as base.
 
-### ```@wowissu/eslint/babel```
+### `@wowissu/eslint/babel`
 
 babel
 
-### ```@wowissu/eslint/file-progress```
+### `@wowissu/eslint/file-progress`
 
 Show the file progress when linting.
 
 
-### ```@wowissu/eslint/ts```
+### `@wowissu/eslint/ts`
 
 rules of typescript. base with `plugin:@typescript-eslint/eslint-recommended`,`plugin:@typescript-eslint/recommended`
 
-### ```@wowissu/eslint/vue```
+### `@wowissu/eslint/vue`
 
 rules of vue, base with `plugin:vue/recommended`
 
