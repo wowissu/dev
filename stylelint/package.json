@@ -1,6 +1,6 @@
 {
   "name": "@wowissu/stylelint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "stylelint form wowissu",
   "main": "index.js",
   "scripts": {
