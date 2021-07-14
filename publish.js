@@ -20,10 +20,17 @@ const opts = {
 }
 
 const argv = yargs(hideBin(process.argv))
-  .positional('cwd', { default: path.resolve(__dirname, 'vux') })
-  .options(opts)
+  .command('$0 <cwd>', 'Publish via dir path', (yargs) => {
+    yargs
+      .positional('cwd', {
+        desc: 'Working dir also publish dir, should include package.json.',
+        type: 'string',
+        coerce: (cwd) => cwd ? path.resolve(__dirname, cwd) : cwd
+      })
+      .options(opts)
+  })
   .showHelpOnFail(true)
-  .demandCommand(1)
+  // .demandCommand(1)
   .check((argv) => {
 
     // check cwd path
@@ -43,6 +50,9 @@ const argv = yargs(hideBin(process.argv))
     return true;
   })
   .argv
+
+console.log(argv);
+process.exit();
 
 const execCommonOpt = { cwd: argv.cwd }
 const packageJsonPath = path.join(argv.cwd, 'package.json');
