@@ -5,7 +5,7 @@ module.exports = {
     "stylelint-order"
 	],
   "rules": {
-    "order/properties-alphabetical-order": false,
+    "order/properties-alphabetical-order": null,
     "order/properties-order": [
       "position",
       "top",
