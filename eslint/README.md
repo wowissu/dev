@@ -32,6 +32,12 @@ Common js rules, must use this as base.
 
 Show the file progress when linting.
 
+## `@wowissu/eslint/import`
+
+![eslint-plugin-import](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/eslint-plugin-import?filename=eslint%2Fpackage.json)
+
+Plugin of eslint-plugin-import can order & lint your import
+
 ## `@wowissu/eslint/ts`
 
 ![typescript](https://img.shields.io/github/package-json/dependency-version/wowissu/dev/typescript?filename=eslint%2Fpackage.json)
