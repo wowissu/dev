@@ -13,9 +13,9 @@ module.exports = {
 
   extends: [
     'eslint:recommended',
-    './node_modules/@wowissu/eslint/common',
-    './node_modules/@wowissu/eslint/babel',
-    './node_modules/@wowissu/eslint/file-progress'
+    '@wowissu/eslint-config/common',
+    '@wowissu/eslint-config/babel',
+    '@wowissu/eslint-config/file-progress'
   ],
 
   parserOptions: {
@@ -38,7 +38,7 @@ module.exports = {
         browser: true
       },
       extends: [
-        './node_modules/@wowissu/eslint/ts'
+        '@wowissu/eslint-config/ts'
         // './eslint/ts/type-checking'
       ]
     }
