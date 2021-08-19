@@ -8,9 +8,9 @@ Add extend into .eslintrc for active the features.
 module.exports = {
   // ...
   extends: [
-    './node_modules/@wowissu/eslint/common',
-    './node_modules/@wowissu/eslint/babel',
-    './node_modules/@wowissu/eslint/file-progress'
+    '@wowissu/eslint-config/common',
+    '@wowissu/eslint-config/babel',
+    '@wowissu/eslint-config/file-progress'
   ],
   // ...
 }
