@@ -31,6 +31,15 @@ type R = ReadonlyKeys<{ readonly foo: 'foo', bar: 'bar', foobar: 'foobar' }>;
 type R = "foo"
 ```
 
+### `UnionToIntersection<T>`
+
+Turn Union To Intersection
+
+```typescript
+type R = UnionToIntersection<A | B>
+type R = A & B
+```
+
 ## **function**
 
 ### `FirstArgument<T>`
