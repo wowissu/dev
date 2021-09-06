@@ -35,3 +35,14 @@ export type WritableKeys<T> = {
 export type ReadonlyKeys<T> = {
   [P in keyof T]-?: IfEquals<{ [Q in P]: T[P] }, { -readonly [Q in P]: T[P] }, never, P>
 }[keyof T];
+
+/**
+ * Turn Union To Intersection
+ *
+ * @example
+ * ```typescript
+ * type R = UnionToIntersection<A | B>
+ * type R = A & B
+ * ```
+ */
+type UnionToIntersection<T> = (T extends any ? (k: T) => void : never) extends ((k: infer U) => void) ? U : never;
