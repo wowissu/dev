@@ -25,7 +25,7 @@ module.exports = {
        * matches the same as classProperty, objectLiteralProperty, typeProperty
        */
       {
-        selector: ['property'],
+        selector: 'property',
         format: ['camelCase', 'PascalCase'],
         leadingUnderscore: 'allow',
         trailingUnderscore: 'forbid'
