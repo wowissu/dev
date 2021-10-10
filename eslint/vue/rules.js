@@ -1,7 +1,3 @@
-/**
- * show progress in process
- */
-
 /** @return { import('eslint').Linter.Config } */
 module.exports = {
   plugins: [
