@@ -24,13 +24,10 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        registry-url: https://registry.npmjs.org/
         registry-url: 'https://npm.pkg.github.com'
 
     - name: yarn install
       run: yarn
-
-    - name: npm login
 
     - name: do publish
       run: node publisher.js ./eslint
