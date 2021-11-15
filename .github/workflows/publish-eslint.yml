@@ -2,7 +2,7 @@ name: '@wowissu/eslint-config publisher'
 
 on:
   push:
-    branchs:
+    branches:
       - publisher
     tags:
       - '@wowissu/eslint-config-v*'
