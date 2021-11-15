@@ -2,6 +2,8 @@ name: '@wowissu/eslint-config publisher'
 
 on:
   push:
+    branchs:
+      publisher
     tags:
       - '@wowissu/eslint-config-v*'
 
@@ -22,11 +24,14 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+        registry-url: 'https://npm.pkg.github.com'
 
     - name: yarn install
       run: yarn
 
     - name: do publish
       run: node publisher.js ./eslint
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
 
