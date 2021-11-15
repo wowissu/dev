@@ -1,9 +1,4 @@
 {
-  "scripts": {
-    "publish:eslint": "node publish.js ./eslint",
-    "publish:types": "node publish.js ./types",
-    "publish:stylelint": "node publish.js ./stylelint"
-  },
   "license": "MIT",
   "devDependencies": {
     "chalk": "^4.1.1",

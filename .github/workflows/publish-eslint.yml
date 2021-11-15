@@ -27,6 +27,6 @@ jobs:
       run: yarn
 
     - name: do publish
-      run: node publish.js ./eslint
+      run: node publisher.js ./eslint
 
 
