@@ -1,13 +1,13 @@
-name: AWS prod pipeline
+name: @wowissu/eslint-config publisher
 
 on:
   push:
     tags:
-      - '@wowissu/eslint-config-v*'
+      - @wowissu/eslint-config-v*
 
 jobs:
-  buildAndPublish:
-    name: BuildAndPublish
+  publish:
+    name: publish
     runs-on: ubuntu-latest
 
     strategy:
