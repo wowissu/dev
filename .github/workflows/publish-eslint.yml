@@ -1,9 +1,9 @@
-name: @wowissu/eslint-config publisher
+name: '@wowissu/eslint-config publisher'
 
 on:
   push:
     tags:
-      - @wowissu/eslint-config-v*
+      - '@wowissu/eslint-config-v*'
 
 jobs:
   publish:
