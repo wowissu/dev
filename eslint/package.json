@@ -1,6 +1,6 @@
 {
   "name": "@wowissu/eslint-config",
-  "version": "2.2.0",
+  "version": "2.2.2",
   "description": "Eslint from wowissu.",
   "scripts": {
     "test": "jest",
