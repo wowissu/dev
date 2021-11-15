@@ -1,0 +1,37 @@
+name: '@wowissu/stylelint publisher'
+
+on:
+  push:
+    tags:
+      - '@wowissu/stylelint-v*'
+
+jobs:
+  publish:
+    name: publish
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['14']
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        registry-url: 'https://registry.npmjs.org'
+
+    - name: yarn install
+      run: yarn install
+
+    - name: do publish
+      run: |
+        cd ./stylelint
+        yarn publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+
