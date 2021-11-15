@@ -27,7 +27,7 @@ jobs:
         registry-url: 'https://npm.pkg.github.com'
 
     - name: yarn install
-      run: yarn
+      run: yarn install
 
     - name: do publish
       run: node publisher.js ./eslint
