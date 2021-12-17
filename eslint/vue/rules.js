@@ -12,10 +12,7 @@ module.exports = {
     }],
     'vue/max-attributes-per-line': ['error', {
       'singleline': 10,
-      'multiline': {
-        'max': 1,
-        'allowFirstLine': false
-      }
+      'multiline': 1
     }],
     'vue/no-v-html': 0,
     'vue/prop-name-casing': ['error', 'camelCase'],
