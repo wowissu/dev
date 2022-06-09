@@ -1648,6 +1648,15 @@ eslint-module-utils@^2.7.0:
     find-up "^2.1.0"
     pkg-dir "^2.0.0"
 
+eslint-plugin-check-file@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-check-file/-/eslint-plugin-check-file-1.1.0.tgz#0badc657e4e9d92f020ad0a42b34dbdec9704074"
+  integrity sha512-OFLBvqFIDVR0F5gI497UhK/swBZRGq9oJLpChfF3wsh+SxmPP5yzkjOS5gQKj2OupiUMpBrPDcq29zH2j873Nw==
+  dependencies:
+    is-glob "^4.0.3"
+    micromatch "^4.0.4"
+    requireindex "^1.2.0"
+
 eslint-plugin-file-progress@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-file-progress/-/eslint-plugin-file-progress-1.2.0.tgz#396282f8d7130e2c168b39dc1bda786a456d4401"
@@ -3331,6 +3340,11 @@ require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
+
+requireindex@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
+  integrity sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==
 
 resolve-cwd@^3.0.0:
   version "3.0.0"
