@@ -22,7 +22,12 @@ module.exports = {
       allowAny: false,
       allowNullish: false,
     }],
-    '@typescript-eslint/unbound-method': 'error',
+    '@typescript-eslint/unbound-method': [
+      "error",
+      {
+        "ignoreStatic": true
+      }
+    ],
 
     '@typescript-eslint/no-floating-promises': ['warn', {ignoreVoid: true, ignoreIIFE: true,}],
     '@typescript-eslint/no-unsafe-call': 'off',
