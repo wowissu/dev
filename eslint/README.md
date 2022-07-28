@@ -60,3 +60,11 @@ Rules of vue, extends with
 ```javascript
 'plugin:vue/recommended'
 ```
+
+## `@wowissu/eslint/vue/vue3`
+
+Rules of vue3, extends with
+
+```javascript
+'plugin:vue/vue3-recommended',
+```

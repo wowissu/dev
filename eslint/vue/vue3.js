@@ -2,7 +2,8 @@
 module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
-    './rules.js'
+    './rules.js',
+    './macros.js'
   ],
   globals: {
     defineProps: "readonly",
