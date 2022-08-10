@@ -1,11 +1,11 @@
 /**
  * @type { import('eslint').Linter.Config }
  */
- module.exports = {
+module.exports = {
   plugins: [
-    'check-file'
+    "check-file"
   ],
-  rules:{
+  rules: {
     // "check-file/folder-match-with-fex":[
     //    "error",
     //    {
@@ -13,20 +13,20 @@
     //       "*.styled.{jsx,tsx}":"**/pages/"
     //    }
     // ],
-    "check-file/filename-naming-convention":[
+    "check-file/filename-naming-convention": [
       "error",
       {
-        "*.{js,ts}":"CAMEL_CASE",
-        "*.{jsx,tsx}":"PASCAL_CASE",
-         "*.{vue}": "PASCAL_CASE"
+        "*.{js,ts}": "CAMEL_CASE",
+        "*.{jsx,tsx}": "PASCAL_CASE",
+        "*.{vue}": "PASCAL_CASE"
       }
-   ],
+    ],
     // "check-file/no-index":"warning",
-    "check-file/folder-naming-convention":[
-       "error",
-       {
-          "src/**/":"CAMEL_CASE",
-       }
+    "check-file/folder-naming-convention": [
+      "error",
+      {
+        "src/**/": "CAMEL_CASE"
+      }
     ]
- }
+  }
 };

@@ -5,6 +5,6 @@
 /** @return { import('eslint').Linter.Config } */
 module.exports = {
   parserOptions: {
-    extraFileExtensions: ['.vue']
+    extraFileExtensions: [".vue"]
   }
 };

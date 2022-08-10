@@ -1,11 +1,11 @@
 /**
  * @type { import('eslint').Linter.Config }
  */
- module.exports = {
+module.exports = {
   extends: [
-    'plugin:import/errors'
+    "plugin:import/errors"
   ],
   plugins: [
-    'import'
+    "import"
   ]
 };

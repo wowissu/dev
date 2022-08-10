@@ -4,6 +4,7 @@
   "description": "Eslint from wowissu.",
   "scripts": {
     "test": "jest",
+    "lint": "eslint --ext .js ./",
     "pub": "yarn publish --access public"
   },
   "repository": {
@@ -38,9 +39,5 @@
     "url": "https://github.com/wowissu/dev/issues"
   },
   "homepage": "https://github.com/wowissu/dev#readme",
-  "main": "index.js",
-  "devDependencies": {
-    "glob": "^7.1.7",
-    "jest": "^27.0.6"
-  }
+  "main": "index.js"
 }

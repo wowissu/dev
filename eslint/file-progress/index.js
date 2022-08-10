@@ -5,11 +5,11 @@
 /** @type { import('eslint').Linter.Config } */
 module.exports = {
   plugins: [
-    'file-progress'
+    "file-progress"
   ],
 
   // add your custom rules here
   rules: {
-    'file-progress/activate': 1
+    "file-progress/activate": 1
   }
 };
