@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js ./",
-    "pub": "yarn publish --access public"
+    "pub": "echo 'use yarn version'"
   },
   "repository": {
     "type": "git",
