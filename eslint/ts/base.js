@@ -58,6 +58,11 @@ module.exports = {
     "space-infix-ops": "off",
     "@typescript-eslint/space-infix-ops": ["error", { "int32Hint": false }],
 
-    "@typescript-eslint/type-annotation-spacing": ["error", { "before": false, "after": true, "overrides": { "arrow": { "before": true, "after": true } } }]
+    "@typescript-eslint/type-annotation-spacing": ["error", {
+      "before": true, "after": true, "overrides": {
+        "colon": { "before": false, "after": true }
+        // 'arrow': { 'before': true, 'after': true }
+      }
+    }]
   }
 };
