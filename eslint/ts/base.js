@@ -35,7 +35,7 @@ module.exports = {
     "@typescript-eslint/object-curly-spacing": ["error", "always", { arraysInObjects: false }],
 
     "space-before-blocks": "off",
-    "@typescript-eslint/space-before-blocks": ["error", { "before": false, "after": true }],
+    "@typescript-eslint/space-before-blocks": ["error", "always"],
 
     "space-before-function-paren": "off",
     "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
