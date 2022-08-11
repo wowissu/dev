@@ -31,6 +31,9 @@ module.exports = {
     "object-curly-spacing": "off",
     "@typescript-eslint/object-curly-spacing": ["error", "always", { arraysInObjects: false }],
 
+    "space-before-blocks": "off",
+    "@typescript-eslint/space-before-blocks": "error",
+
     "@typescript-eslint/type-annotation-spacing": ["error", { "before": false, "after": true }]
   }
 };
