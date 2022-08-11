@@ -4,26 +4,39 @@ module.exports = {
     "plugin:@typescript-eslint/recommended"
   ],
   rules: {
-    "@typescript-eslint/semi": ["error"],
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/prefer-as-const": "off",
-
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-non-null-assertion": "warn",
+    "@typescript-eslint/no-implicit-any-catch": "warn",
+    "@typescript-eslint/prefer-enum-initializers": "warn",
+    "@typescript-eslint/prefer-for-of": "warn",
     "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/no-useless-empty-export": "error",
+    "@typescript-eslint/non-nullable-type-assertion-style": "warn",
+    "@typescript-eslint/switch-exhaustiveness-check": "warn",
 
     "@typescript-eslint/ban-types": [
       "error",
       {
-        extendDefaults: true,
-        types: {
-          object: false
+        "extendDefaults": true,
+        "types": {
+          "object": false,
+          "{}": false
         }
       }
     ],
+
+    "quotes": "off",
+    "@typescript-eslint/quotes": ["error"],
+
+    "semi": "off",
+    "@typescript-eslint/semi": ["error"],
+
+    "no-extra-semi": "off",
+    "@typescript-eslint/no-extra-semi": ["error"],
 
     "comma-spacing": "off",
     "@typescript-eslint/comma-spacing": ["error"],
@@ -63,6 +76,17 @@ module.exports = {
         "colon": { "before": false, "after": true }
         // 'arrow': { 'before': true, 'after': true }
       }
+    }],
+
+    "@typescript-eslint/typedef": [ "error", {
+      "arrayDestructuring": true,
+      "arrowParameter": false,
+      "memberVariableDeclaration": true,
+      "objectDestructuring": false,
+      "parameter": true,
+      "propertyDeclaration": true,
+      "variableDeclaration": false,
+      "variableDeclarationIgnoreFunction": false
     }]
   }
 };

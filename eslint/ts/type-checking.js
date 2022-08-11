@@ -20,13 +20,16 @@ module.exports = {
       "allowNumber": true,
       "allowBoolean": false,
       "allowAny": false,
-      "allowNullish": false
+      "allowNullish": false,
+      "allowRegExp": false
     }],
     "@typescript-eslint/unbound-method": [ "error", { "ignoreStatic": true } ],
     "@typescript-eslint/no-floating-promises": ["warn", { "ignoreVoid": true, "ignoreIIFE": true }],
-    "@typescript-eslint/no-unsafe-call": "off",
-    "@typescript-eslint/no-unsafe-return": "off",
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-member-access": "off"
+
+    "@typescript-eslint/no-redundant-type-constituents": ["error"]
+    // "@typescript-eslint/no-unsafe-call": "error",
+    // "@typescript-eslint/no-unsafe-return": "error",
+    // "@typescript-eslint/no-unsafe-assignment": "off",
+    // "@typescript-eslint/no-unsafe-member-access": "off"
   }
 };

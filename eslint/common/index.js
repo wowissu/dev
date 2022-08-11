@@ -16,6 +16,7 @@ module.exports = {
     "eqeqeq": ["error", "always"],
     "prefer-const": "error",
     "prefer-promise-reject-errors": "off",
+    "arrow-spacing": ["error", { "before": true, "after": true }],
     "no-useless-escape": "off",
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
     "quotes": ["warn", "single", { avoidEscape: true }],
