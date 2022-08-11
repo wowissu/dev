@@ -30,7 +30,7 @@ module.exports = {
     ],
 
     "quotes": "off",
-    "@typescript-eslint/quotes": ["error"],
+    "@typescript-eslint/quotes": ["warn", "single", { "avoidEscape": true }],
 
     "semi": "off",
     "@typescript-eslint/semi": ["error"],
