@@ -79,17 +79,17 @@ module.exports = {
         "colon": { "before": false, "after": true }
         // 'arrow': { 'before': true, 'after': true }
       }
-    }],
-
-    "@typescript-eslint/typedef": [ "error", {
-      "memberVariableDeclaration": true,
-      "propertyDeclaration": true,
-      "arrayDestructuring": false,
-      "arrowParameter": false,
-      "objectDestructuring": false,
-      "parameter": false,
-      "variableDeclaration": false,
-      "variableDeclarationIgnoreFunction": false
     }]
+
+    // "@typescript-eslint/typedef": [ "error", {
+    //   "memberVariableDeclaration": false,
+    //   "propertyDeclaration": false,
+    //   "arrayDestructuring": false,
+    //   "arrowParameter": false,
+    //   "objectDestructuring": false,
+    //   "parameter": false,
+    //   "variableDeclaration": false,
+    //   "variableDeclarationIgnoreFunction": false
+    // }]
   }
 };
