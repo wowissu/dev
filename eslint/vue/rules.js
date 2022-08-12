@@ -10,7 +10,7 @@ module.exports = {
     "vue/max-attributes-per-line": ["error", { singleline: 10, multiline: 1 }],
     "vue/no-v-html": 0,
     "vue/prop-name-casing": ["error", "camelCase"],
-    "vue/block-tag-newline": ["error", { singleline: "always", multiline: "always", maxEmptyLines: 0 }],
+    "vue/block-tag-newline": ["error", { singleline: "always", multiline: "always", maxEmptyLines: 1 }],
     "vue/custom-event-name-casing": ["error", "camelCase", { ignores: [] } ],
     "vue/component-options-name-casing": ["error", "PascalCase"],
     "vue/padding-line-between-blocks": ["error", "always"],
