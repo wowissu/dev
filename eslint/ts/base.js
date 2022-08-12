@@ -38,6 +38,9 @@ module.exports = {
     "no-extra-semi": "off",
     "@typescript-eslint/no-extra-semi": ["error"],
 
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["error", "never"],
+
     "comma-spacing": "off",
     "@typescript-eslint/comma-spacing": ["error"],
 
@@ -79,12 +82,12 @@ module.exports = {
     }],
 
     "@typescript-eslint/typedef": [ "error", {
-      "arrayDestructuring": true,
-      "arrowParameter": false,
       "memberVariableDeclaration": true,
-      "objectDestructuring": false,
-      "parameter": true,
       "propertyDeclaration": true,
+      "arrayDestructuring": false,
+      "arrowParameter": false,
+      "objectDestructuring": false,
+      "parameter": false,
       "variableDeclaration": false,
       "variableDeclarationIgnoreFunction": false
     }]
