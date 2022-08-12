@@ -12,7 +12,7 @@ module.exports = {
     "vue/no-unused-properties": ["warn", { groups: ["props", "data", "computed"], deepData: false, ignorePublicMembers: true }],
     "vue/prefer-prop-type-boolean-first": "warn",
     "vue/prefer-true-attribute-shorthand": ["warn", "always"],
-    "vue/define-macros-order": ["warn", { order: ["defineProps", "defineEmits", "defineExpose"] }],
+    "vue/define-macros-order": ["warn", { order: ["defineProps", "defineEmits"] }],
     "vue/component-tags-order": ["warn", { order: [ "script", "template", "style" ] }],
     "vue/static-class-names-order": "warn",
     "vue/no-unused-refs": "warn"
