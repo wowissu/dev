@@ -23,7 +23,7 @@ module.exports = {
     "vue/html-comment-indent": ["error", 2],
     "vue/match-component-file-name": ["error", { extensions: [], shouldMatchCase: false }],
     "vue/component-definition-name-casing": ["error", "PascalCase"],
-    "vue/new-line-between-multi-line-property": ["error", { minLineOfMultilineProperty: 0 }],
+    // "vue/new-line-between-multi-line-property": ["error", { minLineOfMultilineProperty: 0 }],
     "vue/no-this-in-before-route-enter": ["error"],
     "vue/no-v-text": "error",
     "vue/require-direct-export": "error",
