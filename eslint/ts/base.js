@@ -21,18 +21,18 @@ module.exports = {
     "@typescript-eslint/ban-types": [
       "error",
       {
-        "extendDefaults": true,
-        "types": {
-          "object": false,
+        extendDefaults: true,
+        types: {
+          object: false,
           "{}": false
         }
       }
     ],
 
-    "quotes": "off",
-    "@typescript-eslint/quotes": ["warn", "single", { "avoidEscape": true }],
+    quotes: "off",
+    "@typescript-eslint/quotes": ["warn", "single", { avoidEscape: true }],
 
-    "semi": "off",
+    semi: "off",
     "@typescript-eslint/semi": ["error"],
 
     "no-extra-semi": "off",
@@ -44,39 +44,41 @@ module.exports = {
     "comma-spacing": "off",
     "@typescript-eslint/comma-spacing": ["error"],
 
-    "indent": "off",
+    indent: "off",
     "@typescript-eslint/indent": ["error", 2],
 
     "object-curly-spacing": "off",
-    "@typescript-eslint/object-curly-spacing": ["error", "always", { arraysInObjects: false }],
+    "@typescript-eslint/object-curly-spacing": ["error", "always"],
 
     "space-before-blocks": "off",
     "@typescript-eslint/space-before-blocks": ["error", "always"],
 
     "space-before-function-paren": "off",
-    "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
+    "@typescript-eslint/space-before-function-paren": ["error", { anonymous: "always", named: "never", asyncArrow: "always" }],
 
     "func-call-spacing": "off",
     "@typescript-eslint/func-call-spacing": ["error"],
 
     "keyword-spacing": "off",
-    "@typescript-eslint/keyword-spacing": ["error", { "after": true, "before": true }],
+    "@typescript-eslint/keyword-spacing": ["error", { after: true, before: true }],
 
     "padding-line-between-statements": "off",
     "@typescript-eslint/padding-line-between-statements": [
       "error",
-      { "blankLine": "always", "prev": "*", "next": ["if", "switch", "do", "while", "for", "debugger", "function"]},
-      { "blankLine": "always", "prev": ["if", "switch", "do", "while", "for", "debugger", "function"], "next": "*" },
-      { "blankLine": "always", "prev": ["import"], "next": "*" },
-      { "blankLine": "any", "prev": ["import"], "next": ["import"]}
+      { blankLine: "always", prev: "*", next: ["if", "switch", "do", "while", "for", "debugger", "function"] },
+      { blankLine: "always", prev: ["if", "switch", "do", "while", "for", "debugger", "function"], next: "*" },
+      { blankLine: "always", prev: ["import"], next: "*" },
+      { blankLine: "any", prev: ["import"], next: ["import"] }
     ],
 
     "space-infix-ops": "off",
-    "@typescript-eslint/space-infix-ops": ["error", { "int32Hint": false }],
+    "@typescript-eslint/space-infix-ops": ["error", { int32Hint: false }],
 
     "@typescript-eslint/type-annotation-spacing": ["error", {
-      "before": true, "after": true, "overrides": {
-        "colon": { "before": false, "after": true }
+      before: true,
+      after: true,
+      overrides: {
+        colon: { before: false, after: true }
         // 'arrow': { 'before': true, 'after': true }
       }
     }]

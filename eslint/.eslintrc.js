@@ -13,6 +13,6 @@ module.exports = {
     "./@babel"
   ],
   rules: {
-    "quotes": ["warn", "double", { avoidEscape: true }]
+    quotes: ["warn", "double", { avoidEscape: true }]
   }
 };

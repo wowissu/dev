@@ -17,14 +17,14 @@ module.exports = {
     "@typescript-eslint/require-await": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": ["error", {
-      "allowNumber": true,
-      "allowBoolean": false,
-      "allowAny": false,
-      "allowNullish": false,
-      "allowRegExp": false
+      allowNumber: true,
+      allowBoolean: false,
+      allowAny: false,
+      allowNullish: false,
+      allowRegExp: false
     }],
-    "@typescript-eslint/unbound-method": [ "error", { "ignoreStatic": true } ],
-    "@typescript-eslint/no-floating-promises": ["warn", { "ignoreVoid": true, "ignoreIIFE": true }],
+    "@typescript-eslint/unbound-method": [ "error", { ignoreStatic: true } ],
+    "@typescript-eslint/no-floating-promises": ["warn", { ignoreVoid: true, ignoreIIFE: true }],
 
     "@typescript-eslint/no-redundant-type-constituents": ["error"]
     // "@typescript-eslint/no-unsafe-call": "error",
