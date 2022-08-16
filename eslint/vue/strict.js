@@ -7,7 +7,7 @@ module.exports = {
   ],
   rules: {
     "vue/no-multiple-objects-in-class": "warn",
-    "vue/no-static-inline-styles": ["warn", { allowBinding: false }],
+    "vue/no-static-inline-styles": ["warn", { allowBinding: true }],
     "vue/no-template-target-blank": ["warn", { allowReferrer: false, enforceDynamicLinks: "always" }],
     "vue/no-unused-properties": ["warn", { groups: ["props", "data", "computed"], deepData: false, ignorePublicMembers: true }],
     "vue/prefer-prop-type-boolean-first": "warn",

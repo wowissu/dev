@@ -3,6 +3,9 @@ module.exports = {
   extends: [
     "plugin:@typescript-eslint/recommended"
   ],
+  parserOptions: {
+    parser: "@typescript-eslint/parser"
+  },
   rules: {
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
@@ -17,17 +20,6 @@ module.exports = {
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "warn",
     "@typescript-eslint/switch-exhaustiveness-check": "warn",
-
-    "@typescript-eslint/ban-types": [
-      "error",
-      {
-        extendDefaults: true,
-        types: {
-          object: false,
-          "{}": false
-        }
-      }
-    ],
 
     quotes: "off",
     "@typescript-eslint/quotes": ["warn", "single", { avoidEscape: true }],
@@ -80,6 +72,25 @@ module.exports = {
       overrides: {
         colon: { before: false, after: true }
         // 'arrow': { 'before': true, 'after': true }
+      }
+    }],
+
+    "@typescript-eslint/member-delimiter-style": [1, {
+      multiline: {
+        delimiter: "comma",
+        requireLast: true
+      },
+      singleline: {
+        delimiter: "comma",
+        requireLast: true
+      },
+      overrides: {
+        interface: {
+          multiline: {
+            delimiter: "semi",
+            requireLast: true
+          }
+        }
       }
     }]
 
