@@ -27,7 +27,7 @@ module.exports = {
     "vue/no-this-in-before-route-enter": ["error"],
     "vue/no-v-text": "error",
     "vue/require-direct-export": "error",
-    "vue/script-indent": ["error", 2, { baseIndent: 0, switchCase: 0, ignores: [] }],
+    // "vue/script-indent": ["error", 2, { baseIndent: 0, switchCase: 1, ignores: [] }],
 
     "vue/array-bracket-newline": ["error", "consistent"],
     "vue/array-bracket-spacing": ["error", "never"],
@@ -65,14 +65,14 @@ module.exports = {
     // "vue/max-len": ["error"],
     // "vue/no-irregular-whitespace": ["error", { skipStrings:  }],
     // "vue/no-restricted-syntax": ["error"],
+  }
+  // overrides: [
+  //   {
+  //     files: ["*.vue"],
+  //     rules: {
+  //       indent: "off"
 
-  },
-  overrides: [
-    {
-      files: ["*.vue"],
-      rules: {
-        indent: "off"
-      }
-    }
-  ]
+  //     }
+  //   }
+  // ]
 };
