@@ -5,8 +5,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js ./",
-    "pub": "echo 'use yarn version'",
-    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\""
+    "pub": "echo 'use yarn version'"
   },
   "repository": {
     "type": "git",

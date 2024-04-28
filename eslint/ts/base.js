@@ -13,7 +13,7 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/no-non-null-assertion": "warn",
-    "@typescript-eslint/no-implicit-any-catch": "warn",
+    // "@typescript-eslint/no-implicit-any-catch": "warn",
     "@typescript-eslint/prefer-enum-initializers": "warn",
     "@typescript-eslint/prefer-for-of": "warn",
     "@typescript-eslint/adjacent-overload-signatures": "error",
