@@ -1,11 +1,12 @@
 {
   "name": "@wowissu/eslint-config",
-  "version": "2.7.6",
+  "version": "7.0.0",
   "description": "Eslint from wowissu.",
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js ./",
-    "pub": "echo 'use yarn version'"
+    "pub": "echo 'use yarn version'",
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\""
   },
   "repository": {
     "type": "git",
@@ -22,18 +23,18 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/core": "^7.18.2",
-    "@babel/eslint-parser": "^7.16.0",
-    "@typescript-eslint/eslint-plugin": "5",
-    "@typescript-eslint/parser": "5",
+    "@babel/core": "^7.24.4",
+    "@babel/eslint-parser": "^7.24.1",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
     "babel-eslint": "^10.1.0",
-    "eslint": "8",
-    "eslint-plugin-check-file": "^1.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-check-file": "^2.8.0",
     "eslint-plugin-file-progress": "^1.3.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "eslint-plugin-vue": "^9.3.0",
-    "typescript": "4"
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "typescript": "^5.4.5"
   },
   "bugs": {
     "url": "https://github.com/wowissu/dev/issues"

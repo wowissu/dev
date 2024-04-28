@@ -50,11 +50,7 @@ module.exports = {
     "newline-before-return": "error",
     "no-shadow": ["error", { builtinGlobals: false, allow: ["done", "resolve", "reject", "cb", "fn", "args", "_"], hoist: "functions" }],
     "no-trailing-spaces": "error",
-    "space-before-function-paren": ["error", {
-      anonymous: "always",
-      named: "always",
-      asyncArrow: "always"
-    }],
+    "space-before-function-paren": ["error", { anonymous: "always", named: "never", asyncArrow: "always" }],
     "template-curly-spacing": ["error", "never"],
     "no-useless-concat": ["error"],
     "object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],

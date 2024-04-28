@@ -60,7 +60,9 @@ module.exports = {
       { blankLine: "always", prev: "*", next: ["if", "switch", "do", "while", "for", "debugger", "function"] },
       { blankLine: "always", prev: ["if", "switch", "do", "while", "for", "debugger", "function"], next: "*" },
       { blankLine: "always", prev: ["import"], next: "*" },
-      { blankLine: "any", prev: ["import"], next: ["import"] }
+      { blankLine: "any", prev: ["import"], next: ["import"] },
+      { blankLine: "any", prev: ["*"], next: ["interface", "type"] },
+      { blankLine: "always", prev: ["export", "type"], next: "*" }
     ],
 
     "space-infix-ops": "off",
