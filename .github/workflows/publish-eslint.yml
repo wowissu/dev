@@ -31,8 +31,8 @@ jobs:
       run: |
         cd ./eslint
         yarn publish --access public
-      # env:
-        # NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
     - name: Discord successed notification
       if: success()
