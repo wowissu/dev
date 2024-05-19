@@ -31,8 +31,8 @@ jobs:
       run: |
         cd ./eslint
         yarn publish --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+      # env:
+        # NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
     - name: Discord successed notification
       if: success()
@@ -42,7 +42,7 @@ jobs:
         DISCORD_AVATAR: "https://avatars.githubusercontent.com/u/12434914?v=4"
       uses: Ilshidur/action-discord@0.3.2
       with:
-        args: 'The project `{{ GITHUB_REF_NAME }}` has been deployed. :thumbsup:'
+        args: 'The project `{{ GITHUB_REF_NAME }}` has been deployed. :white_check_mark:'
 
     - name: Discord failed notification
       if: failure()
@@ -52,7 +52,7 @@ jobs:
         DISCORD_AVATAR: "https://avatars.githubusercontent.com/u/12434914?v=4"
       uses: Ilshidur/action-discord@0.3.2
       with:
-        args: 'The project `{{ GITHUB_REF_NAME }}` is failed in publishing. :space_invader:'
+        args: 'The project `{{ GITHUB_REF_NAME }}` is failed in publishing. :bangbang:'
 
 
 
