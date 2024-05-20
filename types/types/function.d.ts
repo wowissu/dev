@@ -14,8 +14,8 @@ export type FirstArgument<T> = T extends (arg1: infer U, ...args: any[]) => any 
  *
  * @example
  * ```typescript
- * type Result = OmitFirstParamters<(fst: number, sed: string, thr: object) => any>;
+ * type Result = OmitFirstParameters<(fst: number, sed: string, thr: object) => any>;
  * type Result = [sed: string, thr: object]
  * ```
  */
-export type OmitFirstParamters<T> = T extends (x: any, ...args: infer P) => any ? P : never;
+export type OmitFirstParameters<T> = T extends (x: any, ...args: infer P) => any ? P : never;

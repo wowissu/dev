@@ -12,14 +12,14 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['14']
+        node-version: ['20']
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         registry-url: 'https://registry.npmjs.org'
@@ -33,5 +33,25 @@ jobs:
         yarn publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+    
+    - name: Discord successed notification
+      if: success()
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        DISCORD_USERNAME: ${{ github.event.repository.name }}
+        DISCORD_AVATAR: "https://avatars.githubusercontent.com/u/12434914?v=4"
+      uses: Ilshidur/action-discord@0.3.2
+      with:
+        args: 'The project `{{ GITHUB_REF_NAME }}` has been deployed. :white_check_mark:'
+
+    - name: Discord failed notification
+      if: failure()
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        DISCORD_USERNAME: ${{ github.event.repository.name }}
+        DISCORD_AVATAR: "https://avatars.githubusercontent.com/u/12434914?v=4"
+      uses: Ilshidur/action-discord@0.3.2
+      with:
+        args: 'The project `{{ GITHUB_REF_NAME }}` is failed in publishing. :bangbang:'
 
 

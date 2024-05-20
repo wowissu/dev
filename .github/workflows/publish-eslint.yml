@@ -38,7 +38,7 @@ jobs:
       if: success()
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        DISCORD_USERNAME: "@wowissu/eslint-config"
+        DISCORD_USERNAME: ${{ github.event.repository.name }}
         DISCORD_AVATAR: "https://avatars.githubusercontent.com/u/12434914?v=4"
       uses: Ilshidur/action-discord@0.3.2
       with:
@@ -48,7 +48,7 @@ jobs:
       if: failure()
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        DISCORD_USERNAME: "@wowissu/eslint-config"
+        DISCORD_USERNAME: ${{ github.event.repository.name }}
         DISCORD_AVATAR: "https://avatars.githubusercontent.com/u/12434914?v=4"
       uses: Ilshidur/action-discord@0.3.2
       with:

@@ -1,6 +1,5 @@
-// .eslintrc.js
-
-const { resolve } = require('path');
+/* eslint-env node */
+const path = require('path');
 
 /** @type { import('eslint').Linter.Config } */
 module.exports = {
@@ -14,12 +13,11 @@ module.exports = {
   extends: [
     'eslint:recommended',
     '@wowissu/eslint-config/common',
-    '@wowissu/eslint-config/babel',
     '@wowissu/eslint-config/file-progress'
   ],
 
   parserOptions: {
-    project: resolve(__dirname, 'tsconfig.json'),
+    project: path.resolve(__dirname, 'tsconfig.json'),
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module' // Allows for the use of imports
   },
@@ -39,8 +37,10 @@ module.exports = {
       },
       extends: [
         '@wowissu/eslint-config/ts'
-        // './eslint/ts/type-checking'
-      ]
+      ],
+      rules: {
+        '@typescript-eslint/no-explicit-any': 'off'
+      }
     }
   ]
 };
