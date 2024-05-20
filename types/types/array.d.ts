@@ -22,6 +22,6 @@ export type OnlyInclude<T, U = T, N extends number = 15> = T extends any ?
   }[[X] extends [never] ? 0 : 1] : never> :
   never;
 
-// export type NoRepeats<T extends readonly any[]> = { [M in keyof T]: { [N in keyof T]:
-//   N extends M ? never : T[M] extends T[N] ? any : never
-// }[number] extends never ? T[M] : never };
+export type NoRepeats<T extends readonly any[]> = { [M in keyof T]: { [N in keyof T]:
+  N extends M ? never : T[M] extends T[N] ? any : never
+}[number] extends never ? T[M] : never };

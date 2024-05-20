@@ -4,6 +4,7 @@
 .git
 .hg
 .npmrc
+.nvmrc
 .lock-wscript
 .svn
 .wafpickle-*
@@ -11,6 +12,5 @@ config.gypi
 CVS
 npm-debug.log
 
-.eslintrc.js
+.eslintrc*
 .eslintignore
-.tsconfig.json

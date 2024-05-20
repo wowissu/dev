@@ -7,7 +7,6 @@
   "author": "wowissu",
   "license": "MIT",
   "private": false,
-  "type": "module",
   "keywords": [
     "wowissu",
     "typescript"
