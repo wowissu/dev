@@ -118,7 +118,9 @@ type Result = ArrayElementMemberType<TodoList, 'foo'> // number
 
 ## **promise**
 
-### `Await<T>`
+### ~~`Await<T>`~~
+
+> Instead by [Awaited\<Type\>](https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype) after Typescript@4.5
 
 Get type from `Promise<T>`
 
@@ -131,5 +133,20 @@ type Result = Await<Promise<string>> === string
 Get type from call who return the Promise
 
 ```typescript
-type Resoult = AwaitReturnType<() => Promise<string>> === string
+type Result = AwaitReturnType<() => Promise<string>> === string
+```
+
+## **Array**
+
+### `OnlyInclude<T>`
+
+Check array only include all possible tuples.
+
+```typescript
+type OneTwo = OnlyInclude<'one' | 'two'>;
+
+export const correct: OneTwo = ['one', 'two'];
+export const missing: OneTwo = ['one']; // error
+export const mismatch: OneTwo = ['one', 'too']; // error
+export const excessive: OneTwo = ['one', 'two', 'three']; // error
 ```
