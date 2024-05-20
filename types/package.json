@@ -1,6 +1,6 @@
 {
   "name": "@wowissu/types",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "typescript helper",
   "main": "types/index.d.js",
   "repository": "https://github.com/wowissu/dev.git",
