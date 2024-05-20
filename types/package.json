@@ -1,12 +1,13 @@
 {
   "name": "@wowissu/types",
-  "version": "1.0.5",
+  "version": "5.4.5",
   "description": "typescript helper",
   "main": "types/index.d.js",
   "repository": "https://github.com/wowissu/dev.git",
   "author": "wowissu",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "keywords": [
     "wowissu",
     "typescript"
@@ -16,9 +17,9 @@
     "pub": "yarn publish --access public"
   },
   "devDependencies": {
-    "@wowissu/eslint-config": "^1.1.3"
+    "@wowissu/eslint-config": "^8.1.8"
   },
   "dependencies": {
-    "typescript": "^4.3.5"
+    "typescript": "^5.4.5"
   }
 }
