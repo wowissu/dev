@@ -9,7 +9,6 @@ module.exports = {
   // ...
   extends: [
     '@wowissu/eslint-config/common',
-    '@wowissu/eslint-config/babel',
     '@wowissu/eslint-config/file-progress'
   ],
   // ...
